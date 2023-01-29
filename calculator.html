@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <script src="calculator.js" async="false"></script>
+    <link rel="stylesheet" href="calculator.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="calculator-container">
+      <div class="display-container">
+        <span id="display"></span>
+      </div>
+      <div class="keypad-container">
+        <!--Keypad container-->
+
+        <button onclick="keyPressed('1')">1</button>
+        <button onclick="keyPressed('2')">2</button>
+        <button onclick="keyPressed('3')">3</button>
+        <button class="operator-button" onclick="keyPressed('-')">-</button>
+
+        <button onclick="keyPressed('4')">4</button>
+        <button onclick="keyPressed('5')">5</button>
+        <button onclick="keyPressed('6')">6</button>
+        <button class="operator-button" onclick="keyPressed('*')">*</button>
+
+        <button onclick="keyPressed('7')">7</button>
+        <button onclick="keyPressed('8')">8</button>
+        <button onclick="keyPressed('9')">9</button>
+        <button class="operator-button" onclick="keyPressed('/')">/</button>
+
+        <button class="cancel-button" onclick="keyPressed('C')">C</button>
+        <button onclick="keyPressed('0')">0</button>
+        <button class="equals-button" onclick="keyPressed('=')">=</button>
+        <button
+          class="operator-button"
+          style="border-bottom-right-radius: 10px"
+          onclick="keyPressed('+')"
+        >
+          +
+        </button>
+      </div>
+
+      <div class="history-container">
+        <button onclick="toggleHistory()" class="history-upbutton">ᐃ</button>
+        <div class="history-list">
+          <p class="history">History</p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <footer></footer>
+</html>
